@@ -4,6 +4,8 @@ import { readdirSync } from "fs";
 import { join } from "path";
 import { Message } from "discord.js";
 import { TicketyClient } from "./struct/Client";
+import { verifyNodeVersion } from "./utils/verifyNodeVersion";
+import { checkConfigTypes } from "./utils/checkConfigTypes";
 const client:TicketyClient = new TicketyClient({
    token: config.token,
    prefix: config.prefix,
@@ -17,6 +19,9 @@ for (const file of commandFiles) {
     client.commands.set(command.default.name, command.default);
     console.log(`${file} loaded`);
 }
+
+// Verify NodeJS Version
+verifyNodeVersion();
 
 // Ready Event
 client.once("ready", () => {
@@ -54,6 +59,9 @@ client.on("message", (message:Message) => {
         process.exit(1);
     }
 });
+
+// Check Config Value Types
+checkConfigTypes(config);
 
 // Client Login
 client.login(client.config.token).catch(err => console.error(err));
