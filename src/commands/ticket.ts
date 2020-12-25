@@ -2,6 +2,7 @@
 const config = require("../../config");
 import { TicketyClient } from "../struct/Client";
 import { Message } from "discord.js";
+import { logCommandExecutes } from "../utils/logCommandExecutes";
 
 export default {
     name: "ticket",
@@ -29,6 +30,7 @@ export default {
                 }],
             });
             await message.channel.send(`✅ Your ticket has been created at ${ticket}`);
+            logCommandExecutes(message, `Ticket ${ticket} has been created by ${message.author.tag}`);
         }
         catch (err) {
             console.error(err);
