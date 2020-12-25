@@ -9,6 +9,15 @@ const client:TicketyClient = new TicketyClient({
    prefix: config.prefix,
 });
 
+// Command Handler
+const commandFiles = readdirSync(join(__dirname, "commands")).filter(file => file.endsWith(".js"));
+for (const file of commandFiles) {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const command = require(`./commands/${file}`);
+    client.commands.set(command.default.name, command.default);
+    console.log(`${file} loaded`);
+}
+
 // Ready Event
 client.once("ready", () => {
    console.log(`Logged in as ${client.user?.tag ?? ""}`);
