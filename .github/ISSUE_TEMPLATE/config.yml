@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: ⬇ Installation Help
+    url: https://discord.gg/DDR3W3Xqjg
+    about: Please visit our Discord if you are experiencing issues with installation.
+  - name: ❓ General Question
+    url: https://discord.gg/DDR3W3Xqjg
+    about: Please visit our Discord if you have any general questions about TicketyBot
