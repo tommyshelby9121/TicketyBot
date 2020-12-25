@@ -85,6 +85,11 @@ export async function generateTranscript(message:any, ticket:any) {
                 // Append msgNode to messageContainer
                 messageContainer.appendChild(msgNode);
             }
+            // Append messageContainer as child of parentContainer
+            parentContainer.appendChild(messageContainer);
+
+            // Write to transcript file
+            await appendFile(`${ticket.name}.html`, parentContainer.outerHTML).catch(err => console.error(err));
         }
     }
 }
