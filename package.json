@@ -1,0 +1,24 @@
+{
+  "name": "@ticketybot/tickety",
+  "version": "1.0.0",
+  "description": "A fully customizable discord ticket bot created for large support guilds",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tommyshelby9121/TicketyBot.git"
+  },
+  "keywords": [
+    "nodejs",
+    "discordjs",
+    "typescript"
+  ],
+  "author": "Sycrixx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tommyshelby9121/TicketyBot/issues"
+  },
+  "homepage": "https://github.com/tommyshelby9121/TicketyBot#readme"
+}
