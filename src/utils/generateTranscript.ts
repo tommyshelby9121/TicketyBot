@@ -64,7 +64,7 @@ export async function generateTranscript(message:any, ticket:any) {
 
             // User Name
             const nameElement = document.createElement("span");
-            const name = document.createTextNode(msg.author.tag + " " + msg.createdAt.toDateString() + " " + msg.createdAt.toLocaleTimeString() + "AST");
+            const name = document.createTextNode(msg.author.tag + " " + msg.createdAt.toDateString() + " " + msg.createdAt.toLocaleTimeString() + " " + "AST");
             nameElement.appendChild(name);
             // Append nameElement to messageContainer
             messageContainer.append(nameElement);
