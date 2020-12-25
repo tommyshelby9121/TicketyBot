@@ -89,7 +89,7 @@ export async function generateTranscript(message:any, ticket:any) {
             parentContainer.appendChild(messageContainer);
 
             // Write to transcript file
-            await appendFile(`${ticket.name}.html`, parentContainer.outerHTML).catch(err => console.error(err));
+            await appendFile(`./src/transcripts/${ticket.name}.html`, parentContainer.outerHTML).catch(err => console.error(err));
         }
     }
 }
