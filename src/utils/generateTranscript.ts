@@ -41,5 +41,22 @@ export async function generateTranscript(message:any, ticket:any) {
         guildElement.appendChild(guildName);
         // Write Guild Info to transcript file
         await appendFile(`./src/transcripts/${ticket.name}.html`, guildElement.outerHTML).catch((err: any) => console.log(err));
+
+        // Run for each fetched message
+        for (const msg of msgs) {
+            // Create Parent Container
+            const parentContainer = document.createElement("div");
+            parentContainer.className = "parent-container";
+
+            // User Avatar
+            const avatarDiv = document.createElement("div");
+            avatarDiv.className = "avatar-container";
+            const img = document.createElement("img");
+            img.setAttribute("src", msg.author.displayAvatarURL());
+            img.className = "avatar";
+            avatarDiv.appendChild(img);
+            // Append avatarDiv to parentContainer
+            parentContainer.appendChild(avatarDiv);
+        }
     }
 }
