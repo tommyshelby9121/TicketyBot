@@ -37,5 +37,23 @@ client.once("ready", () => {
    }
 });
 
+// Message Event
+client.on("message", (message:Message) => {
+    if (!message.content.startsWith(client.config.prefix) || message.author.bot) return;
+    const args = message.content.slice(client.config.prefix.length).split(/ +/);
+    const commandName = args.shift()?.toLowerCase();
+    const command = client.commands.get(commandName) || client.commands.find(cmd => cmd.aliases && cmd.aliases && cmd.aliases.includes(commandName));
+    if (!command) return;
+    if (message.channel.type !== "text") return;
+
+    try {
+        command.execute(client, message, args);
+    }
+    catch (err) {
+        console.error(`Could not load ${commandName} command: ${err}`);
+        process.exit(1);
+    }
+});
+
 // Client Login
 client.login(client.config.token).catch(err => console.error(err));
