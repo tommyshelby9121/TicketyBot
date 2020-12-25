@@ -57,6 +57,17 @@ export async function generateTranscript(message:any, ticket:any) {
             avatarDiv.appendChild(img);
             // Append avatarDiv to parentContainer
             parentContainer.appendChild(avatarDiv);
+
+            // Message Container
+            const messageContainer = document.createElement("div");
+            messageContainer.className = "message-container";
+
+            // User Name
+            const nameElement = document.createElement("span");
+            const name = document.createTextNode(msg.author.tag + " " + msg.createdAt.toDateString() + " " + msg.createdAt.toLocaleTimeString() + "AST");
+            nameElement.appendChild(name);
+            // Append nameElement to messageContainer
+            messageContainer.append(nameElement);
         }
     }
 }
