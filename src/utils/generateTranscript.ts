@@ -68,6 +68,23 @@ export async function generateTranscript(message:any, ticket:any) {
             nameElement.appendChild(name);
             // Append nameElement to messageContainer
             messageContainer.append(nameElement);
+
+            // Check if codeblock
+            if (msg.content.startsWith("```")) {
+                const m = msg.content.replace(/```/g, "");
+                const codeNode = document.createElement("code");
+                const textNode = document.createTextNode(m);
+                codeNode.append(textNode);
+                // Append codeNode to messageContainer
+                messageContainer.appendChild(codeNode);
+            }
+            else {
+                const msgNode = document.createElement("span");
+                const textNode = document.createTextNode(msg.content);
+                msgNode.append(textNode);
+                // Append msgNode to messageContainer
+                messageContainer.appendChild(msgNode);
+            }
         }
     }
 }
