@@ -4,6 +4,7 @@ import { JSDOM } from "jsdom";
 const dom = new JSDOM();
 const document = dom.window.document;
 
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types, @typescript-eslint/no-explicit-any */
 export async function generateTranscript(message:any, ticket:any) {
     // Create collection
     let messageCollection = new Collection<any, any>();
