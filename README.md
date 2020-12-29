@@ -16,6 +16,14 @@
 
 Tickety is a bot create for large [Discord](https://discord.com) guilds needing a fast and convenient way to provide support for their members privately for the exchange of confidential information. These tickets exist in the form of a temporary private channel accessible to the Support Team and the user.
 
+# Getting Started
+
+- [⚒️ Setting Up Tickety](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/setup.md)
+
+- [🤖 Commands](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/commands.md)
+
+- [☁️ Hosting Tickety](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/hosting.md)
+
 # Support Server
 
 If you need help with setting up the bot or are experiencing issues related to using the bot, join the support Discord guild here:\
