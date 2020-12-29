@@ -11,3 +11,12 @@
     -
     <a href="https://github.com/tommyshelby9121/TicketyBot/issues/new?assignees=&labels=&template=bug_report.md">Report Bug</a>
 </p>
+
+# About
+
+Tickety is a bot create for large [Discord](https://discord.com) guilds needing a fast and convenient way to provide support for their members privately for the exchange of confidential information. These tickets exist in the form of a temporary private channel accessible to the Support Team and the user.
+
+# Support Server
+
+If you need help with setting up the bot or are experiencing issues related to using the bot, join the support Discord guild here:\
+👉 [Join Support Guild](https://discord.gg/WfEK97xKwV)
