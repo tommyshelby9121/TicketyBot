@@ -16,3 +16,56 @@ We will be going over on how to host Tickety by yourself on a VPS (Virtual Priva
 
     - Please check out [this article](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-20-04) if you're unsure how to create new users
     - Also make sure you have proper firewalls setup
+    
+### Update Repositories List
+
+```bash
+sudo apt update
+```
+
+### Installing Node.js v15
+
+```bash
+curl -sL https://deb.nodesource.com/setup_15.x | sudo -E bash -
+
+sudo apt install nodejs
+
+node --version
+```
+
+Run the last command to see if the latest update of Node.js version 12 is installed properly
+
+### Installing Tickety
+
+Here, I will be downloading Tickety into the `/bin` directory, but feel free to download it anywhere you like
+
+```bash
+cd /bin
+
+git clone https://github.com/tommyshelby9121/TicketyBot.git
+```
+
+### Installing Project Dependencies
+
+```bash
+cd TicketyBot
+
+npm install
+
+# Start Tickety
+npm run start
+
+# Turn Tickety Off
+ctrl+C
+```
+
+### Setup PM2 Process Manager
+
+```bash
+sudo npm i pm2 -g
+
+pm2 start dist/index.js
+
+# To make sure bot comes online when reboot
+pm2 startup ubuntu
+```
