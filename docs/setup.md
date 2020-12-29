@@ -20,3 +20,13 @@
     - The `master` branch contains new features that are to be added to an official release. However, these may contain a few bugs but most of them are ironed out when a release is created
     
 5. In the bot's folder, rename `config.example.js` to `config.js`
+
+## Server Setup
+
+In this step, we will be looking at configuring Tickety for your guild
+
+1. Go through the [prerequisites](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/setup.md#prerequisites) above first!
+
+2. Open the `config.js` in a text editor of choice and fill in all the required values. For some of the fields that require a `boolean`, an option is already provided
+    
+    - Don't worry, the bot checks for each of the config values to ensure they are in the correct types
