@@ -7,6 +7,8 @@ export function checkConfigTypes(config:any) {
     if (typeof config.log_command_executes !== "boolean") throw new TypeError("Log Command Executes should be a type of Boolean");
     if (typeof config.ticket_log_channel !== "string") throw new TypeError("Ticket Log Channel should be a type of String");
     if (typeof config.ticket_parent !== "string") throw new TypeError("Ticket Parent should be a type of String");
+    if (typeof config.ticket_name_type !== "string") throw TypeError("Ticket Name Type should be a type of String");
     if (typeof config.dm_user !== "boolean") throw new TypeError("DM User should be a type of Boolean");
     if (typeof config.create_transcripts !== "boolean") throw new TypeError("Create Transcripts should be a type of Boolean");
+    if (typeof config.save_transcripts !== "boolean") throw new TypeError("Save Transcripts should be a type of Boolean");
 }
