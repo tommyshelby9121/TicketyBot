@@ -18,11 +18,11 @@ Tickety is a bot create for large [Discord](https://discord.com) guilds needing 
 
 # Getting Started
 
-- [⚒️ Setting Up Tickety](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/setup.md)
+- [⚒️ Setting Up Tickety](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/en/setup.md)
 
-- [🤖 Commands](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/commands.md)
+- [🤖 Commands](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/en/commands.md)
 
-- [☁️ Hosting Tickety](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/hosting.md)
+- [☁️ Hosting Tickety](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/en/hosting.md)
 
 # Support Server
 
