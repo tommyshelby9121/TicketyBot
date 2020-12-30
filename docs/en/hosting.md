@@ -33,7 +33,7 @@ sudo apt install nodejs
 node --version
 ```
 
-Run the last command to see if the latest update of Node.js version 12 is installed properly
+Run the last command to see if the latest update of Node.js version 15 is installed properly
 
 ### Installing Tickety
 
@@ -66,6 +66,6 @@ sudo npm i pm2 -g
 
 pm2 start dist/index.js
 
-# To make sure bot comes online when reboot
+# To make sure bot comes online on reboot
 pm2 startup ubuntu
 ```
