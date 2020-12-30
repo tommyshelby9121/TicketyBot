@@ -3,6 +3,8 @@ export function checkConfigTypes(config:any) {
     if (typeof config.token !== "string") throw new TypeError("Token should be a type of String");
     if (typeof config.prefix !== "string") throw new TypeError("Prefix should be a type of String");
     if (typeof config.presence_type !== "string") throw new TypeError("Presence Type should be a type of String");
+    if (config.presence_type !== "PLAYING" && config.presence_type !== "STREAMING" && config.presence_type !== "LISTENING" && config.presence_type !== "WATCHING" && config.presence_type !== "COMPETING") throw new Error("Presence Type should be PLAYING, STREAMING, LISTENING, WATCHING or COMPETING")
+    if (typeof config.presence_message !== "string") throw new TypeError("Presence Message should be a type of String");
     if (typeof config.support_role !== "string") throw new TypeError("Support Role should be a type of String");
     if (typeof config.log_command_executes !== "boolean") throw new TypeError("Log Command Executes should be a type of Boolean");
     if (typeof config.ticket_log_channel !== "string") throw new TypeError("Ticket Log Channel should be a type of String");
