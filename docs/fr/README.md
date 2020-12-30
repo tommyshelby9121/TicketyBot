@@ -8,7 +8,7 @@
 </p>
 <p align="center">
     <a href="https://discord.gg/DDR3W3Xqjg">Voir là démo</a>
-    -
+    ·
     <a href="https://github.com/tommyshelby9121/TicketyBot/issues/new?assignees=&labels=&template=bug_report.md">Rapporter bug</a>
 </p>
 <p align="center">
