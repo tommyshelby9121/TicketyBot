@@ -1,7 +1,9 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const config = require("../../config");
 import { TicketyClient } from "../struct/Client";
-import {DMChannel, Message, MessageAttachment} from "discord.js";
-import {generateTranscript} from "../utils/generateTranscript";
-import {unlink} from "fs/promises";
+import { DMChannel, Message, MessageAttachment } from "discord.js";
+import { generateTranscript } from "../utils/generateTranscript";
+import { unlink } from "fs/promises";
 
 export default {
     name: "transcript",
@@ -12,8 +14,13 @@ export default {
         if (!(message.channel instanceof DMChannel)) {
             const transcript = new MessageAttachment(`./src/transcripts/${message.channel.name}.html`);
             await message.channel.send(transcript).then(() => {
-                if (!(message.channel instanceof DMChannel)) {
-                    unlink(`./src/transcripts/${message.channel.name}.html`);
+                if (config.save_transcripts === true) {
+                    return;
+                }
+                else {
+                    if (!(message.channel instanceof DMChannel)) {
+                        unlink(`./src/transcripts/${message.channel.name}.html`);
+                    }
                 }
             }).catch(err => console.error(err));
         }
