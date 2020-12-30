@@ -8,8 +8,11 @@
 </p>
 <p align="center">
     <a href="https://discord.gg/DDR3W3Xqjg">View Demo</a>
-    -
+    ·
     <a href="https://github.com/tommyshelby9121/TicketyBot/issues/new?assignees=&labels=&template=bug_report.md">Report Bug</a>
+</p>
+<p align="center">
+    <a href="https://github.com/tommyshelby9121/TicketyBot/docs/fr/README.md">Français</a>
 </p>
 
 # About
@@ -18,11 +21,11 @@ Tickety is a bot create for large [Discord](https://discord.com) guilds needing 
 
 # Getting Started
 
-- [⚒️ Setting Up Tickety](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/setup.md)
+- [⚒️ Setting Up Tickety](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/en/setup.md)
 
-- [🤖 Commands](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/commands.md)
-
-- [☁️ Hosting Tickety](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/hosting.md)
+<!-- - [🤖 Commands](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/en/commands.md)
+-->
+- [☁️ Hosting Tickety](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/en/hosting.md)
 
 # Support Server
 
