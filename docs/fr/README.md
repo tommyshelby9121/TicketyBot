@@ -23,8 +23,8 @@ Tickety est un bot créé pour les guildes [Discord](https://discord.com) qui on
 
 - [⚒️ Configuration de Tickety](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/en/setup.md)
 
-- [🤖 Commandes](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/en/commands.md)
-
+<!-- - [🤖 Commandes](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/en/commands.md)
+-->
 - [☁️ Hébergement Tickety](https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/en/hosting.md)
 
 # Server D'Assistance
