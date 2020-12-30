@@ -12,7 +12,7 @@
     <a href="https://github.com/tommyshelby9121/TicketyBot/issues/new?assignees=&labels=&template=bug_report.md">Report Bug</a>
 </p>
 <p align="center">
-    <a href="https://github.com/tommyshelby9121/TicketyBot/docs/fr/README.md">Français</a>
+    <a href="https://github.com/tommyshelby9121/TicketyBot/blob/master/docs/fr/README.md">Français</a>
 </p>
 
 # About
